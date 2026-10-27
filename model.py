@@ -42,11 +42,24 @@ def assign_class_labels(inputs, num_classes):
 def one_hot_encode_labels(labels, num_classes):
     return jax.nn.one_hot(labels, num_classes, dtype=jnp.float32)
 
-# Step 7 - init_linear_layer (not yet solved)
-# TODO: implement
+# Step 7 - init_linear_layer
+import jax
+import jax.numpy as jnp
 
-# Step 8 - init_mlp_params (not yet solved)
-# TODO: implement
+def init_linear_layer(key, in_dim, out_dim, scale=0.1):
+    W = scale * sample_normal_matrix(key, (in_dim, out_dim))
+    b = jnp.zeros((out_dim,))
+    return {'W': W, 'b': b}
+
+# Step 8 - init_mlp_params
+def init_mlp_params(key, layer_sizes, scale=0.1):
+    num_layers = len(layer_sizes) - 1
+    keys = split_prng_key(key, num_layers)
+    params = []
+    for i in range(num_layers):
+        layer = init_linear_layer(keys[i], layer_sizes[i], layer_sizes[i+1], scale=scale)
+        params.append(layer)
+    return params
 
 # Step 9 - linear_forward (not yet solved)
 # TODO: implement
