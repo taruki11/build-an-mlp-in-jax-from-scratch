@@ -24,8 +24,8 @@ python scaffold.py
 - [x] **12.** mlp_forward
 - [x] **13.** log_softmax_logits
 - [x] **14.** cross_entropy_loss
-- [ ] **15.** classification_accuracy
-- [ ] **16.** loss_fn_of_params
+- [x] **15.** classification_accuracy
+- [x] **16.** loss_fn_of_params
 - [ ] **17.** compute_param_grads
 - [ ] **18.** sgd_update_params
 - [ ] **19.** training_step
