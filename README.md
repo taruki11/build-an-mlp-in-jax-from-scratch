@@ -19,8 +19,8 @@ python scaffold.py
 - [x] **7.** init_linear_layer
 - [x] **8.** init_mlp_params
 - [x] **9.** linear_forward
-- [ ] **10.** relu_activation
-- [ ] **11.** softmax_probabilities
+- [x] **10.** relu_activation
+- [x] **11.** softmax_probabilities
 - [ ] **12.** mlp_forward
 - [ ] **13.** log_softmax_logits
 - [ ] **14.** cross_entropy_loss
