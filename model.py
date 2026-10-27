@@ -27,11 +27,16 @@ import jax.numpy as jnp
 def sample_normal_matrix(key, shape):
     return jax.random.normal(key, shape)
 
-# Step 4 - sample_input_features (not yet solved)
-# TODO: implement
+# Step 4 - sample_input_features
+import jax
+import jax.numpy as jnp
 
-# Step 5 - assign_class_labels (not yet solved)
-# TODO: implement
+def sample_input_features(key, batch_size, num_features):
+    return sample_normal_matrix(key, (batch_size, num_features))
+
+# Step 5 - assign_class_labels
+def assign_class_labels(inputs, num_classes):
+    return jnp.argmax(inputs[:, :num_classes], axis=-1).astype(jnp.int32)
 
 # Step 6 - one_hot_encode_labels (not yet solved)
 # TODO: implement

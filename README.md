@@ -13,8 +13,8 @@ python scaffold.py
 - [x] **1.** make_prng_key
 - [x] **2.** split_prng_key
 - [x] **3.** sample_normal_matrix
-- [ ] **4.** sample_input_features
-- [ ] **5.** assign_class_labels
+- [x] **4.** sample_input_features
+- [x] **5.** assign_class_labels
 - [ ] **6.** one_hot_encode_labels
 - [ ] **7.** init_linear_layer
 - [ ] **8.** init_mlp_params
