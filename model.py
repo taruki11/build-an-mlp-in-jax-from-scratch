@@ -139,8 +139,12 @@ def training_step(params, x, one_hot_targets, learning_rate):
     new_params = sgd_update_params(params, grads, learning_rate)
     return new_params, loss
 
-# Step 20 - train_mlp (not yet solved)
-# TODO: implement
+# Step 20 - train_mlp
+def train_mlp(params, x, one_hot_targets, learning_rate, num_epochs):
+    current_params = params
+    for _ in range(num_epochs):
+        current_params, _ = training_step(current_params, x, one_hot_targets, learning_rate)
+    return current_params
 
 # Step 21 - predict_classes (not yet solved)
 # TODO: implement
