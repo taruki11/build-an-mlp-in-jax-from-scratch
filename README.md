@@ -22,8 +22,8 @@ python scaffold.py
 - [x] **10.** relu_activation
 - [x] **11.** softmax_probabilities
 - [x] **12.** mlp_forward
-- [ ] **13.** log_softmax_logits
-- [ ] **14.** cross_entropy_loss
+- [x] **13.** log_softmax_logits
+- [x] **14.** cross_entropy_loss
 - [ ] **15.** classification_accuracy
 - [ ] **16.** loss_fn_of_params
 - [ ] **17.** compute_param_grads
